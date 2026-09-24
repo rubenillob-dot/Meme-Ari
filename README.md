@@ -141,10 +141,10 @@ Meme-Ari/
 ├── style.css               # Estilos globales, paleta neón, layout Spotify y media queries
 ├── app.js                  # Lógica de la app: reproductor, canvas, karaoke y lightbox
 ├── assets/
-│   ├── bingo_arixu.png     # Imagen del meme/bingo en alta definición (1254x1254)
+│   ├── MemeAri.png         # Imagen oficial del meme/bingo en alta definición (1536x1024)
 │   └── la_ari_la_lia.mp3   # Pista de audio oficial sincronizada con la letra
 ├── Imagen/
-│   └── Arimeme.png         # Archivo gráfico original de respaldo
+│   └── MemeAri.png         # Archivo gráfico original actualizado
 └── README.md               # Esta documentación técnica y de usuario
 ```
 

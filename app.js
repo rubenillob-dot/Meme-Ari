@@ -7,7 +7,7 @@
 /* ==========================================================================
    CONSTANTS & MEDIA ASSETS CONFIGURATION
    ========================================================================== */
-const MEME_IMAGE_URL = 'assets/bingo_arixu.png';
+const MEME_IMAGE_URL = 'Imagen/MemeAri.png';
 const SONG_AUDIO_URL = 'assets/la_ari_la_lia.mp3';
 
 const LYRICS_DATA = [
@@ -121,10 +121,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxBackdrop = document.getElementById('lightbox-backdrop');
   const lightboxImg = document.getElementById('lightbox-img');
   const lbCloseBtn = document.getElementById('lb-close');
+  const lbBottomClose = document.getElementById('lb-bottom-close');
   const lbZoomIn = document.getElementById('lb-zoom-in');
   const lbZoomOut = document.getElementById('lb-zoom-out');
   const lbZoomReset = document.getElementById('lb-zoom-reset');
   const btnFullscreenToggle = document.getElementById('btn-fullscreen-toggle');
+  const miniProgressFill = document.getElementById('mini-progress-fill');
 
   // Search & Toast & Vault Elements
   const searchInput = document.getElementById('search-input');
@@ -267,36 +269,44 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ==========================================================================
      2. MEME / BINGO REVEAL CONTROLLER
      ========================================================================== */
-  function revealMeme() {
+  function revealMeme(immediate = false) {
     if (isRevealed) return;
     isRevealed = true;
 
     // Audio chime effect
-    playRevealChime();
+    if (!immediate) playRevealChime();
 
     // Smoothly reveal the player bar from bottom and nav links from top
     playerBar.classList.add('player-visible');
+    const appLayout = document.querySelector('.app-layout');
+    if (appLayout) appLayout.classList.add('has-player');
     if (headerNavLinks) headerNavLinks.classList.add('nav-visible');
     if (brandBadge) brandBadge.textContent = 'STREAM EDITION';
     if (searchInput) searchInput.placeholder = '¿Qué quieres escuchar hoy? (ej. La Ari la lía...)';
 
-    // Hide mystery card with smooth transition
-    mysteryCard.style.transition = 'all 0.4s var(--ease-smooth)';
-    mysteryCard.style.opacity = '0';
-    mysteryCard.style.transform = 'scale(0.92)';
-
-    setTimeout(() => {
+    if (immediate) {
       mysteryCard.style.display = 'none';
       revealedWrapper.style.display = 'flex';
       revealedWrapper.classList.add('animate-reveal');
+    } else {
+      // Hide mystery card with smooth transition
+      mysteryCard.style.transition = 'all 0.4s var(--ease-smooth)';
+      mysteryCard.style.opacity = '0';
+      mysteryCard.style.transform = 'scale(0.92)';
 
-      showToast("✨ ¡Acceso concedido! Archivo desbloqueado.", "sparkles");
+      setTimeout(() => {
+        mysteryCard.style.display = 'none';
+        revealedWrapper.style.display = 'flex';
+        revealedWrapper.classList.add('animate-reveal');
 
-      // Auto start track
-      if (audio.paused) {
-        startPlayback();
-      }
-    }, 380);
+        showToast("✨ ¡Acceso concedido! Archivo desbloqueado.", "sparkles");
+
+        // Auto start track
+        if (audio.paused) {
+          startPlayback();
+        }
+      }, 380);
+    }
   }
 
   revealBtn.addEventListener('click', revealMeme);
@@ -420,6 +430,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const percent = Math.min((curr / dur) * 100, 100);
     seekFill.style.width = `${percent}%`;
     seekThumb.style.left = `${percent}%`;
+    if (miniProgressFill) {
+      miniProgressFill.style.width = `${percent}%`;
+    }
 
     syncLyricsWithTime(curr);
   });
@@ -607,9 +620,15 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ==========================================================================
      6. NAVIGATION TABS (Meme vs Lyrics View)
      ========================================================================== */
-  function switchTab(target) {
+  function switchTab(target, immediate = false) {
     if (target === 'meme') {
-      if (lyricsView.classList.contains('active-panel')) {
+      if (immediate) {
+        lyricsView.classList.remove('active-panel', 'panel-closing');
+        memeView.classList.add('active-panel');
+        tabMemeBtn.classList.add('active');
+        tabLyricsBtn.classList.remove('active');
+        btnLyricsToggle.classList.remove('active');
+      } else if (lyricsView.classList.contains('active-panel')) {
         lyricsView.classList.add('panel-closing');
         setTimeout(() => {
           lyricsView.classList.remove('active-panel', 'panel-closing');
@@ -626,7 +645,13 @@ document.addEventListener('DOMContentLoaded', () => {
         btnLyricsToggle.classList.remove('active');
       }
     } else {
-      if (memeView.classList.contains('active-panel')) {
+      if (immediate) {
+        memeView.classList.remove('active-panel', 'panel-closing');
+        lyricsView.classList.add('active-panel');
+        tabMemeBtn.classList.remove('active');
+        tabLyricsBtn.classList.add('active');
+        btnLyricsToggle.classList.add('active');
+      } else if (memeView.classList.contains('active-panel')) {
         memeView.classList.add('panel-closing');
         setTimeout(() => {
           memeView.classList.remove('active-panel', 'panel-closing');
@@ -722,6 +747,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   lbCloseBtn.addEventListener('click', closeLightbox);
+  if (lbBottomClose) lbBottomClose.addEventListener('click', closeLightbox);
   lightboxBackdrop.addEventListener('click', closeLightbox);
   btnFullscreenToggle.addEventListener('click', openLightbox);
 
@@ -745,7 +771,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const query = e.target.value.toLowerCase().trim();
     if (!query) return;
 
-    if (query.includes('ari') || query.includes('fail') || query.includes('bingo') || query.includes('fortnite')) {
+    if (query.includes('ari') || query.includes('fail') || query.includes('bingo') || query.includes('fortnite') || query.includes('memeari')) {
       // highlight match
       if (!isRevealed) revealMeme();
     }
@@ -809,6 +835,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const mins = Math.floor(seconds / 60);
     const secs = Math.floor(seconds % 60);
     return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+  }
+
+  /* Test State Query Param handler */
+  const urlParams = new URLSearchParams(window.location.search);
+  const testState = urlParams.get('test_state');
+  if (testState) {
+    document.body.classList.add('no-anim');
+  }
+  if (testState === 'revealed') {
+    revealMeme(true);
+  } else if (testState === 'lyrics') {
+    revealMeme(true);
+    switchTab('lyrics', true);
+    highlightLyricLine(2, true);
+  } else if (testState === 'lightbox') {
+    revealMeme(true);
+    openLightbox();
   }
 
 });

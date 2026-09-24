@@ -64,7 +64,8 @@
               <circle cx="8.5" cy="8.5" r="1.5"/>
               <polyline points="21 15 16 10 5 21"/>
             </svg>
-            <span>Meme & Bingo</span>
+            <span class="nav-text-desktop">Meme & Bingo</span>
+            <span class="nav-text-mobile">Bingo</span>
           </button>
           <button class="nav-pill" id="tab-lyrics-btn" title="Modo Letras Karaoke">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
@@ -73,7 +74,8 @@
               <line x1="12" y1="19" x2="12" y2="23"/>
               <line x1="8" y1="23" x2="16" y2="23"/>
             </svg>
-            <span>Letra Karaoke</span>
+            <span class="nav-text-desktop">Letra Karaoke</span>
+            <span class="nav-text-mobile">Letra</span>
           </button>
         </nav>
 
@@ -127,7 +129,7 @@
             <div class="meme-card-frame">
               <div class="meme-card-glass">
                 <div class="meme-image-container" id="meme-img-container">
-                  <img src="assets/bingo_arixu.png" id="meme-img" alt="Bingo de Fails Fortnite - Arixu" class="meme-image" loading="eager">
+                  <img src="Imagen/MemeAri.png" id="meme-img" alt="Bingo de Fails - MemeAri" class="meme-image" loading="eager">
                   <div class="meme-image-overlay">
                     <button class="image-overlay-btn" id="quick-zoom-btn" title="Ver en grande">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
@@ -154,7 +156,7 @@
                       <span>Ver en grande</span>
                     </button>
 
-                    <a href="assets/bingo_arixu.png" download="bingo_arixu_meme.png" class="action-btn secondary" id="btn-download-img" title="Descargar imagen">
+                    <a href="Imagen/MemeAri.png" download="MemeAri.png" class="action-btn secondary" id="btn-download-img" title="Descargar imagen">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
                       </svg>
@@ -231,7 +233,7 @@
       <!-- Left Track Info -->
       <div class="player-left">
         <div class="track-thumb-box" id="player-thumb-btn" title="Ver imagen">
-          <img src="assets/bingo_arixu.png" alt="Cover" class="track-thumb-img">
+          <img src="Imagen/MemeAri.png" alt="Cover" class="track-thumb-img">
           <div class="thumb-hover-overlay">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
               <polyline points="15 3 21 3 21 9"></polyline>
@@ -366,6 +368,9 @@
           </svg>
         </button>
 
+      <!-- Mini Player Progress Line for Mobile -->
+      <div class="mini-progress-track" id="mini-progress-track" aria-hidden="true">
+        <div class="mini-progress-fill" id="mini-progress-fill"></div>
       </div>
 
     </footer>
@@ -379,7 +384,7 @@
       <div class="lightbox-toolbar">
         <div class="lightbox-info">
           <h3>Bingo de Fails - Fortnite (Arixu)</h3>
-          <span>Resolución original 1254x1254</span>
+          <span>Resolución original 1536x1024</span>
         </div>
         <div class="lightbox-tools">
           <button class="tool-btn" id="lb-zoom-in" title="Acercar (+)">
@@ -403,7 +408,7 @@
               <path d="M3 3v5h5"></path>
             </svg>
           </button>
-          <a href="assets/bingo_arixu.png" download="bingo_arixu_completo.png" class="tool-btn" id="lb-download" title="Descargar imagen">
+          <a href="Imagen/MemeAri.png" download="MemeAri.png" class="tool-btn" id="lb-download" title="Descargar imagen">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
             </svg>
@@ -417,7 +422,14 @@
         </div>
       </div>
       <div class="lightbox-stage" id="lightbox-stage">
-        <img src="assets/bingo_arixu.png" id="lightbox-img" alt="Bingo de Fails en Alta Definición">
+        <img src="Imagen/MemeAri.png" id="lightbox-img" alt="MemeAri - Bingo de Fails en Alta Definición">
+        <button class="lightbox-mobile-close-btn" id="lb-bottom-close" title="Cerrar con una sola mano">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+          <span>Cerrar</span>
+        </button>
       </div>
     </div>
   </div>
