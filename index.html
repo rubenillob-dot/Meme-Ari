@@ -185,7 +185,7 @@
                         <path d="M21 2l-2 2m-1.5 1.5L16 7l-1.5-1.5M16 7l-4 4-2-2-6 6a3 3 0 1 0 4.24 4.24l6-6-2-2 4-4z"/>
                       </svg>
                     </span>
-                    <span class="btn-title-main">[ DESBLOQUEAR BÓVEDA DE MEMES ]</span>
+                    <span class="btn-title-main">[ 🔓 DESBLOQUEAR Y VER TODOS LOS MEMES ]</span>
                     <span class="btn-icon-arrow">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
                         <polyline points="9 18 15 12 9 6"></polyline>
@@ -193,6 +193,7 @@
                     </span>
                   </span>
                 </button>
+                <button class="vault-quick-btn" id="quick-reveal-btn" type="button" title="Ver directamente la galería completa de memes">[ ⚡ ACCESO DIRECTO A LA GALERÍA ]</button>
                 <p class="vault-cta-hint">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
                     <circle cx="12" cy="12" r="10"></circle>
@@ -230,6 +231,7 @@
                   </svg>
                   <span>Revelar Todos</span>
                 </button>
+                <button class="btn-reseal-all" id="btn-reseal-all" type="button" title="Volver a sellar y bloquear la bóveda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg><span>Bloquear Bóveda</span></button>
               </div>
               <h2 class="unlocked-title">Expedientes de Memes de la Comunidad</h2>
               <p class="unlocked-subtitle">Haz clic en cada caja para desclasificar el meme, puntuarlo y ver su contenido extra.</p>
@@ -278,11 +280,12 @@
               <!-- Contenido de la tarjeta (se muestra tras la animación) -->
               <div class="box-card-content">
 <div class="box-media-wrap" data-index="0" title="Click para ampliar imagen en pantalla completa">
+                <div class="box-meme-bg-ambient" style="background-image: url('assets/memes/ErreDeRamon.webp');" aria-hidden="true"></div>
                 <div class="box-badge-top">
                   <span class="box-exp-tag">EXP #01</span>
                   <span class="box-video-badge">🎬 VÍDEO EXTRA</span>
                 </div>
-                <img src="assets/memes/ErreDeRamon.webp" alt="Meme de ErreDeRamon" class="box-meme-img" loading="lazy">
+                <img src="assets/memes/ErreDeRamon.webp" alt="Meme de ErreDeRamon - Top Donadores & La Comunidad es Familia" class="box-meme-img" loading="eager" decoding="async" onerror="if(!this.dataset.t){this.dataset.t='1';this.src='Memes Imagenes/ErreDeRamon.webp';}">
                 <div class="box-media-overlay">
                   <span class="overlay-zoom-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
@@ -297,7 +300,7 @@
               </div>
               <div class="box-meta-info">
                 <span class="box-author-name">ErreDeRamon</span>
-                <span class="box-lore-hint">Vídeo disponible 🎬</span>
+                <span class="box-lore-hint">Top Donadores &amp; Familia 🎬</span>
               </div>
               <div class="box-actions-bar">
                 <a href="assets/memes/ErreDeRamon.webp" download="Meme_ErreDeRamon.webp" class="box-btn btn-download" title="Descargar imagen">
@@ -351,7 +354,7 @@
                   <div class="sealed-author-info">
                     <span class="sealed-author-lbl">EXPEDIENTE DE</span>
                     <span class="sealed-author-txt">Jaratos</span>
-                    <span class="sealed-pill-tag ">🔒 EXPEDIENTE COMUNIDAD</span>
+                    <span class="sealed-pill-tag">🐶 MEME CHAT</span>
                   </div>
 
                   <div class="sealed-prompt-pill">
@@ -365,11 +368,12 @@
               <!-- Contenido de la tarjeta (se muestra tras la animación) -->
               <div class="box-card-content">
 <div class="box-media-wrap" data-index="1" title="Click para ampliar imagen en pantalla completa">
+                <div class="box-meme-bg-ambient" style="background-image: url('assets/memes/Jaratos.webp');" aria-hidden="true"></div>
                 <div class="box-badge-top">
                   <span class="box-exp-tag">EXP #02</span>
-                  
+                  <span class="box-sub-badge">🐶 MEME CHAT</span>
                 </div>
-                <img src="assets/memes/Jaratos.webp" alt="Meme de Jaratos" class="box-meme-img" loading="lazy">
+                <img src="assets/memes/Jaratos.webp" alt="Meme de Jaratos - Hater vs 3 Meses Sub" class="box-meme-img" loading="eager" decoding="async" onerror="if(!this.dataset.t){this.dataset.t='1';this.src='Memes Imagenes/Jaratos.webp';}">
                 <div class="box-media-overlay">
                   <span class="overlay-zoom-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
@@ -384,6 +388,7 @@
               </div>
               <div class="box-meta-info">
                 <span class="box-author-name">Jaratos</span>
+                <span class="box-lore-hint">Hater vs 3 Meses Sub 🐶</span>
               </div>
               <div class="box-actions-bar">
                 <a href="assets/memes/Jaratos.webp" download="Meme_Jaratos.webp" class="box-btn btn-download" title="Descargar imagen">
@@ -437,7 +442,7 @@
                   <div class="sealed-author-info">
                     <span class="sealed-author-lbl">EXPEDIENTE DE</span>
                     <span class="sealed-author-txt">KidMaujMagno</span>
-                    <span class="sealed-pill-tag ">🔒 EXPEDIENTE COMUNIDAD</span>
+                    <span class="sealed-pill-tag">🔥 TIER S // VIRAL</span>
                   </div>
 
                   <div class="sealed-prompt-pill">
@@ -451,11 +456,12 @@
               <!-- Contenido de la tarjeta (se muestra tras la animación) -->
               <div class="box-card-content">
 <div class="box-media-wrap" data-index="2" title="Click para ampliar imagen en pantalla completa">
+                <div class="box-meme-bg-ambient" style="background-image: url('assets/memes/KidMaujMagno.webp');" aria-hidden="true"></div>
                 <div class="box-badge-top">
                   <span class="box-exp-tag">EXP #03</span>
-                  
+                  <span class="box-sub-badge">🔥 TIER S</span>
                 </div>
-                <img src="assets/memes/KidMaujMagno.webp" alt="Meme de KidMaujMagno" class="box-meme-img" loading="lazy">
+                <img src="assets/memes/KidMaujMagno.webp" alt="Meme de KidMaujMagno - Piyuyin & Baneados" class="box-meme-img" loading="eager" decoding="async" onerror="if(!this.dataset.t){this.dataset.t='1';this.src='Memes Imagenes/KidMaujMagno.webp';}">
                 <div class="box-media-overlay">
                   <span class="overlay-zoom-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
@@ -470,6 +476,7 @@
               </div>
               <div class="box-meta-info">
                 <span class="box-author-name">KidMaujMagno</span>
+                <span class="box-lore-hint">Piyuyin &amp; Baneados 🔥</span>
               </div>
               <div class="box-actions-bar">
                 <a href="assets/memes/KidMaujMagno.webp" download="Meme_KidMaujMagno.webp" class="box-btn btn-download" title="Descargar imagen">
@@ -523,7 +530,7 @@
                   <div class="sealed-author-info">
                     <span class="sealed-author-lbl">EXPEDIENTE DE</span>
                     <span class="sealed-author-txt">LivingBenidorm</span>
-                    <span class="sealed-pill-tag ">🔒 EXPEDIENTE COMUNIDAD</span>
+                    <span class="sealed-pill-tag">🏆 RANKED // UNREAL</span>
                   </div>
 
                   <div class="sealed-prompt-pill">
@@ -537,11 +544,12 @@
               <!-- Contenido de la tarjeta (se muestra tras la animación) -->
               <div class="box-card-content">
 <div class="box-media-wrap" data-index="3" title="Click para ampliar imagen en pantalla completa">
+                <div class="box-meme-bg-ambient" style="background-image: url('assets/memes/LivingBenidorm.webp');" aria-hidden="true"></div>
                 <div class="box-badge-top">
                   <span class="box-exp-tag">EXP #04</span>
-                  
+                  <span class="box-sub-badge">🏆 RANKED</span>
                 </div>
-                <img src="assets/memes/LivingBenidorm.webp" alt="Meme de LivingBenidorm" class="box-meme-img" loading="lazy">
+                <img src="assets/memes/LivingBenidorm.webp" alt="Meme de LivingBenidorm - Esperando el Unreal" class="box-meme-img" loading="eager" decoding="async" onerror="if(!this.dataset.t){this.dataset.t='1';this.src='Memes Imagenes/LivingBenidorm.webp';}">
                 <div class="box-media-overlay">
                   <span class="overlay-zoom-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
@@ -556,6 +564,7 @@
               </div>
               <div class="box-meta-info">
                 <span class="box-author-name">LivingBenidorm</span>
+                <span class="box-lore-hint">Esperando el Unreal 🏆</span>
               </div>
               <div class="box-actions-bar">
                 <a href="assets/memes/LivingBenidorm.webp" download="Meme_LivingBenidorm.webp" class="box-btn btn-download" title="Descargar imagen">
@@ -609,7 +618,7 @@
                   <div class="sealed-author-info">
                     <span class="sealed-author-lbl">EXPEDIENTE DE</span>
                     <span class="sealed-author-txt">Neeusgoomisiiis</span>
-                    <span class="sealed-pill-tag ">🔒 EXPEDIENTE COMUNIDAD</span>
+                    <span class="sealed-pill-tag">☕ MODS DEL SÓTANO</span>
                   </div>
 
                   <div class="sealed-prompt-pill">
@@ -623,11 +632,12 @@
               <!-- Contenido de la tarjeta (se muestra tras la animación) -->
               <div class="box-card-content">
 <div class="box-media-wrap" data-index="4" title="Click para ampliar imagen en pantalla completa">
+                <div class="box-meme-bg-ambient" style="background-image: url('assets/memes/Neeusgoomisiiis.webp');" aria-hidden="true"></div>
                 <div class="box-badge-top">
                   <span class="box-exp-tag">EXP #05</span>
-                  
+                  <span class="box-sub-badge">☕ DEV MODS</span>
                 </div>
-                <img src="assets/memes/Neeusgoomisiiis.webp" alt="Meme de Neeusgoomisiiis" class="box-meme-img" loading="lazy">
+                <img src="assets/memes/Neeusgoomisiiis.webp" alt="Meme de Neeusgoomisiiis - Los Mods del Sótano" class="box-meme-img" loading="eager" decoding="async" onerror="if(!this.dataset.t){this.dataset.t='1';this.src='Memes Imagenes/Neeusgoomisiiis.webp';}">
                 <div class="box-media-overlay">
                   <span class="overlay-zoom-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
@@ -642,6 +652,7 @@
               </div>
               <div class="box-meta-info">
                 <span class="box-author-name">Neeusgoomisiiis</span>
+                <span class="box-lore-hint">Los Mods del Sótano ☕</span>
               </div>
               <div class="box-actions-bar">
                 <a href="assets/memes/Neeusgoomisiiis.webp" download="Meme_Neeusgoomisiiis.webp" class="box-btn btn-download" title="Descargar imagen">
@@ -695,7 +706,7 @@
                   <div class="sealed-author-info">
                     <span class="sealed-author-lbl">EXPEDIENTE DE</span>
                     <span class="sealed-author-txt">Raquelvete</span>
-                    <span class="sealed-pill-tag ">🔒 EXPEDIENTE COMUNIDAD</span>
+                    <span class="sealed-pill-tag">📚 #HELP // TWITCH</span>
                   </div>
 
                   <div class="sealed-prompt-pill">
@@ -709,11 +720,12 @@
               <!-- Contenido de la tarjeta (se muestra tras la animación) -->
               <div class="box-card-content">
 <div class="box-media-wrap" data-index="5" title="Click para ampliar imagen en pantalla completa">
+                <div class="box-meme-bg-ambient" style="background-image: url('assets/memes/Raquelvete.webp');" aria-hidden="true"></div>
                 <div class="box-badge-top">
                   <span class="box-exp-tag">EXP #06</span>
-                  
+                  <span class="box-sub-badge">📚 #HELP</span>
                 </div>
-                <img src="assets/memes/Raquelvete.webp" alt="Meme de Raquelvete" class="box-meme-img" loading="lazy">
+                <img src="assets/memes/Raquelvete.webp" alt="Meme de Raquelvete - Ponte a estudiar #help" class="box-meme-img" loading="eager" decoding="async" onerror="if(!this.dataset.t){this.dataset.t='1';this.src='Memes Imagenes/Raquelvete.webp';}">
                 <div class="box-media-overlay">
                   <span class="overlay-zoom-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
@@ -728,6 +740,7 @@
               </div>
               <div class="box-meta-info">
                 <span class="box-author-name">Raquelvete</span>
+                <span class="box-lore-hint">Ponte a estudiar #help 📚</span>
               </div>
               <div class="box-actions-bar">
                 <a href="assets/memes/Raquelvete.webp" download="Meme_Raquelvete.webp" class="box-btn btn-download" title="Descargar imagen">
@@ -781,7 +794,7 @@
                   <div class="sealed-author-info">
                     <span class="sealed-author-lbl">EXPEDIENTE DE</span>
                     <span class="sealed-author-txt">Rubenillo</span>
-                    <span class="sealed-pill-tag ">🔒 EXPEDIENTE COMUNIDAD</span>
+                    <span class="sealed-pill-tag">🎯 STREAM FAIL BINGO</span>
                   </div>
 
                   <div class="sealed-prompt-pill">
@@ -795,11 +808,12 @@
               <!-- Contenido de la tarjeta (se muestra tras la animación) -->
               <div class="box-card-content">
 <div class="box-media-wrap" data-index="6" title="Click para ampliar imagen en pantalla completa">
+                <div class="box-meme-bg-ambient" style="background-image: url('assets/memes/Rubenillo.png');" aria-hidden="true"></div>
                 <div class="box-badge-top">
                   <span class="box-exp-tag">EXP #07</span>
-                  
+                  <span class="box-sub-badge">🎯 BINGO</span>
                 </div>
-                <img src="assets/memes/Rubenillo.png" alt="Meme de Rubenillo" class="box-meme-img" loading="lazy">
+                <img src="assets/memes/Rubenillo.png" alt="Meme de Rubenillo - Stream Fail Bingo (¡A por todos!)" class="box-meme-img" loading="eager" decoding="async" onerror="if(!this.dataset.t){this.dataset.t='1';this.src='Memes Imagenes/Rubenillo.png';}">
                 <div class="box-media-overlay">
                   <span class="overlay-zoom-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
@@ -814,6 +828,7 @@
               </div>
               <div class="box-meta-info">
                 <span class="box-author-name">Rubenillo</span>
+                <span class="box-lore-hint">Bingo de Fails Stream 🎯</span>
               </div>
               <div class="box-actions-bar">
                 <a href="assets/memes/Rubenillo.png" download="Meme_Rubenillo.png" class="box-btn btn-download" title="Descargar imagen">
@@ -867,7 +882,7 @@
                   <div class="sealed-author-info">
                     <span class="sealed-author-lbl">EXPEDIENTE DE</span>
                     <span class="sealed-author-txt">Sito</span>
-                    <span class="sealed-pill-tag ">🔒 EXPEDIENTE COMUNIDAD</span>
+                    <span class="sealed-pill-tag">📢 SUSTO LEGENDARIO</span>
                   </div>
 
                   <div class="sealed-prompt-pill">
@@ -881,11 +896,12 @@
               <!-- Contenido de la tarjeta (se muestra tras la animación) -->
               <div class="box-card-content">
 <div class="box-media-wrap" data-index="7" title="Click para ampliar imagen en pantalla completa">
+                <div class="box-meme-bg-ambient" style="background-image: url('assets/memes/Sito.webp');" aria-hidden="true"></div>
                 <div class="box-badge-top">
                   <span class="box-exp-tag">EXP #08</span>
-                  
+                  <span class="box-sub-badge">📢 BOCINA</span>
                 </div>
-                <img src="assets/memes/Sito.webp" alt="Meme de Sito" class="box-meme-img" loading="lazy">
+                <img src="assets/memes/Sito.webp" alt="Meme de Sito - Ari tranquila vs Piyu y su bocina" class="box-meme-img" loading="eager" decoding="async" onerror="if(!this.dataset.t){this.dataset.t='1';this.src='Memes Imagenes/Sito.webp';}">
                 <div class="box-media-overlay">
                   <span class="overlay-zoom-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
@@ -900,6 +916,7 @@
               </div>
               <div class="box-meta-info">
                 <span class="box-author-name">Sito</span>
+                <span class="box-lore-hint">Piyu y su bocina 📢</span>
               </div>
               <div class="box-actions-bar">
                 <a href="assets/memes/Sito.webp" download="Meme_Sito.webp" class="box-btn btn-download" title="Descargar imagen">
@@ -955,7 +972,7 @@
                   <div class="sealed-author-info">
                     <span class="sealed-author-lbl">SLOT VACANTE</span>
                     <span class="sealed-author-txt">UsuarioX</span>
-                    <span class="sealed-pill-tag empty-slot-tag">⚡ HUECO DISPONIBLE</span>
+                    <span class="sealed-pill-tag empty-slot-tag">✦ HUECO LIBRE #09</span>
                   </div>
 
                   <div class="sealed-prompt-pill">
@@ -969,12 +986,13 @@
               <!-- Contenido de la tarjeta (se muestra tras la animación) -->
               <div class="box-card-content">
                 <div class="box-media-wrap" data-index="8" title="Click para ampliar imagen en pantalla completa">
-                  <div class="box-badge-top">
-                    <span class="box-exp-tag">EXP #09</span>
-                    <span class="box-empty-tag">DISPONIBLE</span>
-                  </div>
-                  <img src="assets/memes/placeholder_usuariox.svg" alt="Hueco libre - UsuarioX" class="box-meme-img" loading="lazy">
-                  <div class="box-media-overlay">
+                <div class="box-meme-bg-ambient" style="background-image: url('assets/memes/placeholder_usuariox.svg');" aria-hidden="true"></div>
+                <div class="box-badge-top">
+                  <span class="box-exp-tag">EXP #09</span>
+                  <span class="box-empty-tag">✦ VACANTE</span>
+                </div>
+                <img src="assets/memes/placeholder_usuariox.svg" alt="Slot de la Comunidad - UsuarioX" class="box-meme-img" loading="eager" decoding="async" onerror="if(!this.dataset.t){this.dataset.t='1';this.src='Memes Imagenes/placeholder_usuariox.svg';}">
+                <div class="box-media-overlay">
                     <span class="overlay-zoom-icon">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
                         <circle cx="11" cy="11" r="8"></circle>
@@ -988,7 +1006,7 @@
                 </div>
                 <div class="box-meta-info">
                   <span class="box-author-name">UsuarioX</span>
-                  <span class="box-lore-hint" style="color: #38BDF8;">Hueco libre</span>
+                <span class="box-lore-hint">Slot Libre Comunidad ✦</span>
                 </div>
                 <div class="box-actions-bar">
                   <a href="assets/memes/placeholder_usuariox.svg" download="Hueco_Libre_UsuarioX.svg" class="box-btn btn-download is-empty-btn" title="Descargar imagen del hueco">
@@ -1054,8 +1072,12 @@
     <div class="lightbox-dialog">
       <div class="lightbox-toolbar">
         <div class="lightbox-info">
-          <h3 id="lb-title">Bingo de Fails - Fortnite (Arixu)</h3>
-          <span id="lb-subtitle">Resolución original</span>
+          <div class="lb-header-top">
+            <span class="lb-counter-badge" id="lb-counter">1 / 9</span>
+            <span class="lb-author-badge" id="lb-author">ErreDeRamon</span>
+          </div>
+          <h3 id="lb-title">Top Donadores &amp; La Comunidad es Familia</h3>
+          <span id="lb-subtitle">Resolución Original HD</span>
         </div>
         <div class="lightbox-tools">
           <button class="tool-btn" id="lb-zoom-in" title="Acercar (+)">
@@ -1079,7 +1101,7 @@
               <path d="M3 3v5h5"></path>
             </svg>
           </button>
-          <a href="Imagen/MemeAri.png" download="MemeAri.png" class="tool-btn" id="lb-download" title="Descargar imagen">
+          <a href="assets/memes/ErreDeRamon.webp" download="Meme_ErreDeRamon.webp" class="tool-btn" id="lb-download" title="Descargar imagen en alta definición">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
             </svg>
@@ -1093,7 +1115,25 @@
         </div>
       </div>
       <div class="lightbox-stage" id="lightbox-stage">
-        <img src="Imagen/MemeAri.png" id="lightbox-img" alt="MemeAri - Bingo de Fails en Alta Definición">
+        <!-- Ambient glowing backdrop matching current meme -->
+        <div class="lightbox-ambient-bg" id="lb-ambient-bg" aria-hidden="true" style="background-image: url('assets/memes/ErreDeRamon.webp');"></div>
+
+        <!-- Previous Meme Navigation Arrow -->
+        <button class="lb-nav-btn lb-prev-btn" id="lb-prev" title="Meme anterior (← Flecha izquierda)" aria-label="Meme anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="22" height="22">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <img src="assets/memes/ErreDeRamon.webp" id="lightbox-img" alt="Meme en alta definición">
+
+        <!-- Next Meme Navigation Arrow -->
+        <button class="lb-nav-btn lb-next-btn" id="lb-next" title="Meme siguiente (→ Flecha derecha)" aria-label="Meme siguiente">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="22" height="22">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+
         <button class="lightbox-mobile-close-btn" id="lb-bottom-close" title="Cerrar con una sola mano">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18">
             <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -1106,7 +1146,7 @@
   </div>
 
   
-  <!-- Context Modal (Reproductor de Vídeo / Lore Extra) -->
+  <!-- Context Modal<!-- Context Modal (Reproductor de Vídeo / Lore Extra) -->
   <div class="context-modal" id="context-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="context-modal-title">
     <div class="context-backdrop" id="context-backdrop"></div>
     <div class="context-dialog">

@@ -1939,37 +1939,81 @@ body.no-anim .lightbox-modal.active .lightbox-dialog {
 .box-media-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  border-radius: 12px;
+  height: 330px;
+  border-radius: 14px;
   overflow: hidden;
-  background: #090510;
+  background: radial-gradient(circle at center, #1e1133 0%, #090510 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.65);
+}
+
+/* Ambient glowing backdrop matching the meme's colors */
+.box-meme-bg-ambient {
+  position: absolute;
+  inset: -20px;
+  background-size: cover;
+  background-position: center;
+  filter: blur(28px) saturate(2) brightness(0.35);
+  opacity: 0.85;
+  transform: scale(1.15);
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 0.35s ease, filter 0.35s ease;
+}
+
+.box-media-wrap:hover .box-meme-bg-ambient {
+  filter: blur(22px) saturate(2.4) brightness(0.48);
+  opacity: 1;
 }
 
 .box-meme-img {
-  width: 100%;
-  height: 100%;
+  position: relative;
+  z-index: 1;
+  max-width: 95%;
+  max-height: 95%;
+  width: auto;
+  height: auto;
   object-fit: contain;
-  background: radial-gradient(circle at center, rgba(32, 16, 52, 0.6) 0%, rgba(9, 5, 16, 0.95) 100%);
+  border-radius: 8px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.75), 0 0 1px rgba(255, 255, 255, 0.25);
   display: block;
-  transition: transform 0.35s var(--ease-smooth);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .box-media-wrap:hover .box-meme-img {
-  transform: scale(1.04);
+  transform: scale(1.035);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.88), 0 0 24px rgba(168, 85, 247, 0.45);
 }
 
 .box-badge-top {
   position: absolute;
-  top: 8px;
-  left: 8px;
-  right: 8px;
+  top: 10px;
+  left: 10px;
+  right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  z-index: 3;
   pointer-events: none;
+}
+
+.box-sub-badge {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  background: rgba(168, 85, 247, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #E9D5FF;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(192, 132, 252, 0.45);
+  letter-spacing: 0.8px;
 }
 
 .box-exp-tag {
@@ -2703,21 +2747,101 @@ body.no-anim .lightbox-modal.active .lightbox-dialog {
   justify-content: center;
   overflow: hidden;
   position: relative;
-  background: #08080a;
+  background: #08070d;
   cursor: grab;
 }
 
-.lightbox-stage:active {
-  cursor: grabbing;
+.lightbox-ambient-bg {
+  position: absolute;
+  inset: -40px;
+  background-size: cover;
+  background-position: center;
+  filter: blur(50px) saturate(2.2) brightness(0.24);
+  opacity: 0.65;
+  pointer-events: none;
+  z-index: 0;
+  transition: background-image 0.35s ease;
 }
 
 .lightbox-stage img {
+  position: relative;
+  z-index: 1;
   max-width: 90%;
-  max-height: 90%;
+  max-height: 85%;
   object-fit: contain;
   transition: transform 0.15s ease-out;
-  border-radius: 8px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(155, 81, 224, 0.3);
+}
+
+.lb-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(18, 12, 30, 0.85);
+  border: 1.5px solid rgba(168, 85, 247, 0.45);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.65);
+}
+
+.lb-prev-btn {
+  left: 24px;
+}
+
+.lb-next-btn {
+  right: 24px;
+}
+
+.lb-nav-btn:hover {
+  background: var(--primary);
+  border-color: #C084FC;
+  box-shadow: 0 0 25px var(--primary-glow);
+  transform: translateY(-50%) scale(1.12);
+  color: #FFFFFF;
+}
+
+.lb-nav-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.lb-header-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2px;
+}
+
+.lb-counter-badge {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #38BDF8;
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  padding: 1px 8px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+.lb-author-badge {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #E2E8F0;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1px 8px;
+  border-radius: 4px;
 }
 
 .lightbox-mobile-close-btn {
@@ -3502,6 +3626,59 @@ body.no-anim .lightbox-modal.active .lightbox-dialog {
   transform: none;
 }
 
+.btn-reseal-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #FCA5A5;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-reseal-all:hover {
+  background: rgba(239, 68, 68, 0.25);
+  border-color: #F87171;
+  color: #FFFFFF;
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.4);
+  transform: translateY(-1px);
+}
+
+.vault-quick-btn {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(168, 85, 247, 0.14);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  color: #E9D5FF;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+
+.vault-quick-btn:hover {
+  background: rgba(168, 85, 247, 0.28);
+  border-color: #C084FC;
+  color: #FFFFFF;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+  transform: translateY(-1px);
+}
+
 /* Base Card adjustments */
 .box-card {
   position: relative;
@@ -3910,7 +4087,20 @@ body.no-anim .lightbox-modal.active .lightbox-dialog {
     justify-content: center;
   }
   .box-card {
-    min-height: 380px;
+    min-height: 360px;
+  }
+  .box-media-wrap {
+    height: 280px;
+  }
+  .lb-nav-btn {
+    width: 42px;
+    height: 42px;
+  }
+  .lb-prev-btn {
+    left: 8px;
+  }
+  .lb-next-btn {
+    right: 8px;
   }
   .sealed-vault-core {
     width: 68px;
