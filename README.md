@@ -1,6 +1,6 @@
-# 🟣 Arify - Streamer Edition | Documentación Técnica y Funcional
+# 🟣 Memerixu - Streamer Edition | Documentación Técnica y Funcional
 
-**Arify** es una Single Page Application (SPA) interactiva, moderna y responsive inspirada fielmente en la experiencia de usuario y diseño visual de **Spotify Dark Mode**, personalizada con una identidad de marca en tonos morados, violetas y neón (`#8A2BE2`, `#9B51E0`, `#C084FC`).
+**Memerixu** es una Single Page Application (SPA) interactiva, moderna y responsive inspirada fielmente en la experiencia de usuario y diseño visual de **Spotify Dark Mode**, personalizada con una identidad de marca en tonos morados, violetas y neón (`#8A2BE2`, `#9B51E0`, `#C084FC`).
 
 Combina un reproductor de audio completo, una experiencia inmersiva de letras sincronizadas (Karaoke), un fondo dinámico reactivo en Canvas HTML5 y un sistema de "archivo confidencial" con desbloqueo fluido.
 
