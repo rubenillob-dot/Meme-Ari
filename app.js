@@ -16,11 +16,6 @@ const MEMES_DATA = [
     image: 'assets/memes/ErreDeRamon.webp',
     fallbackImage: 'Memes Imagenes/ErreDeRamon.webp',
     downloadName: 'Meme_ErreDeRamon.webp',
-    hasVideo: true,
-    videoSrc: 'assets/contexto/Contexto ErredeRamon.mp4',
-    videoFallback: 'assets/contexto/Contexto ErredeRamon.mov',
-    contextTitle: 'Vídeo Clip de Contexto // ErreDeRamon',
-    contextDesc: 'Vídeo clip con el momento exacto y contexto de su meme en directo de Fortnite aportado por ErreDeRamon: "Top Donadores del Mes: 1. AbitoRawr (40 subs) 2. ErreDeRamon (35 subs)". ¡La comunidad es familia y a por el Subtember!',
     initialScore: 8.5
   },
   {
@@ -31,9 +26,6 @@ const MEMES_DATA = [
     image: 'assets/memes/Jaratos.webp',
     fallbackImage: 'Memes Imagenes/Jaratos.webp',
     downloadName: 'Meme_Jaratos.webp',
-    hasVideo: false,
-    contextTitle: 'Expediente de Lore // Jaratos',
-    contextDesc: 'Meme presentado por Jaratos: "Arichu cuando Jaratos escribe un comentario hater en el chat 😡 vs Arichu cuando Jaratos se suscribe por 3 meses a su canal de Twitch 🥰". La dualidad clásica del chat de Arixu.',
     initialScore: 7.8
   },
   {
@@ -44,9 +36,6 @@ const MEMES_DATA = [
     image: 'assets/memes/KidMaujMagno.webp',
     fallbackImage: 'Memes Imagenes/KidMaujMagno.webp',
     downloadName: 'Meme_KidMaujMagno.webp',
-    hasVideo: false,
-    contextTitle: 'Expediente de Lore // KidMaujMagno',
-    contextDesc: 'Meme de KidMaujMagno: El contraste brutal entre "Cómo Ari ve el directo" (fiesta, perrito feliz, confeti y colores) versus "Cómo los subs ven el directo" (Ari enfadada en modo tomate, perrito poseído y la lista de baneados del canal). ¡Piyuyin ya es parte del squad!',
     initialScore: 9.0
   },
   {
@@ -57,9 +46,6 @@ const MEMES_DATA = [
     image: 'assets/memes/LivingBenidorm.webp',
     fallbackImage: 'Memes Imagenes/LivingBenidorm.webp',
     downloadName: 'Meme_LivingBenidorm.webp',
-    hasVideo: false,
-    contextTitle: 'Expediente de Lore // LivingBenidorm',
-    contextDesc: 'Aporte de LivingBenidorm: Todo el chat de ImArixu (Rubén, Piyuyin, Mauj, Raquel, Noopo, Lucía...) rezando bajo las mantas con 97% en Campeón esperando la ansiada subida a Unreal: "¡Por favor ImArixu... el Unreal te espera!".',
     initialScore: 8.8
   },
   {
@@ -70,9 +56,6 @@ const MEMES_DATA = [
     image: 'assets/memes/Neeusgoomisiiis.webp',
     fallbackImage: 'Memes Imagenes/Neeusgoomisiiis.webp',
     downloadName: 'Meme_Neeusgoomisiiis.webp',
-    hasVideo: false,
-    contextTitle: 'Expediente de Lore // Neeusgoomisiiis',
-    contextDesc: 'Meme de Neeusgoomisiiis: Visión clandestina del búnker subterráneo de los moderadores: programando HTML, CSS, JavaScript y la web de Fortnite con tazas de "Café para sobrevivir" mientras vigilan 4 pantallas del stream sin descanso.',
     initialScore: 8.2
   },
   {
@@ -83,48 +66,106 @@ const MEMES_DATA = [
     image: 'assets/memes/Raquelvete.webp',
     fallbackImage: 'Memes Imagenes/Raquelvete.webp',
     downloadName: 'Meme_Raquelvete.webp',
-    hasVideo: false,
-    contextTitle: 'Expediente de Lore // Raquelvete',
-    contextDesc: 'Creación de Raquelvete: "Ponte a estudiar de una vez y deja de ver esas cosas que te machacan la cabeza... #help". El dilema universal de la comunidad cuando Ari inicia directo en Twitch y los exámenes están a la vuelta de la esquina.',
     initialScore: 8.4
   },
   {
     id: 6,
-    author: 'Rubenillo',
-    title: 'Stream Fail Bingo // ¡A por todos!',
-    subtitle: 'El cartón definitivo de los fails en directo',
-    image: 'assets/memes/Rubenillo.png',
-    fallbackImage: 'Memes Imagenes/Rubenillo.png',
-    downloadName: 'Meme_Rubenillo.png',
-    hasVideo: false,
-    contextTitle: 'Expediente de Lore // Rubenillo',
-    contextDesc: 'Expediente de Rubenillo: Bingo interactivo con todas las situaciones clásicas de los directos de Ari: armas invisibles, muertes de caída, raids a canales rusos, quedarse muteada, apagón de bluetooth, donaciones troll y cancelación del código ARIXU. ¡Línea y Bingo!',
-    initialScore: 9.3
-  },
-  {
-    id: 7,
     author: 'Sito',
     title: 'Ari y el Chat Tranquilos vs Piyu y su Bocina',
     subtitle: 'Susto legendario en directo (Undertaker)',
     image: 'assets/memes/Sito.webp',
     fallbackImage: 'Memes Imagenes/Sito.webp',
     downloadName: 'Meme_Sito.webp',
-    hasVideo: false,
-    contextTitle: 'Expediente de Lore // Sito',
-    contextDesc: 'Meme de Sito: "Ari y el chat tranquilamente" representado por AJ Styles sonriente, mientras detrás acecha El Enterrador (The Undertaker) con la etiqueta "Piyu y su bocina" a punto de romper los cascos de toda la audiencia.',
     initialScore: 8.6
   },
   {
+    id: 7,
+    author: 'Daniela',
+    title: 'Las Veladoras de Santa Ari // Subida a Unreal',
+    subtitle: 'Fe ciega en el Unreal con veladoras milagrosas',
+    image: 'assets/memes/Daniela.webp',
+    fallbackImage: 'Memes Imagenes/Daniela.webp',
+    downloadName: 'Meme_Daniela.webp',
+    initialScore: 9.1
+  },
+  {
     id: 8,
+    author: 'Elenuky8',
+    title: 'Los Stream Snipers vs Ari xu // El Plan del SS',
+    subtitle: 'El infalible plan de los snipers... hasta que Ari dispara',
+    image: 'assets/memes/Elenuky8.webp',
+    fallbackImage: 'Memes Imagenes/Elenuky8.webp',
+    downloadName: 'Meme_Elenuky8.webp',
+    initialScore: 8.7
+  },
+  {
+    id: 9,
+    author: 'Ferdinang',
+    title: 'La Ruleta del Ban // 99% Ban vs 1% Timeout',
+    subtitle: 'Ruleta de sanciones y Art el Payaso descorchando champán',
+    image: 'assets/memes/Ferdinang.webp',
+    fallbackImage: 'Memes Imagenes/Ferdinang.webp',
+    downloadName: 'Meme_Ferdinang.webp',
+    initialScore: 8.9
+  },
+  {
+    id: 10,
+    author: 'Franco930910',
+    title: 'La Veladora de Santa Ari // Patrona en Mercadona',
+    subtitle: 'Anuncio oficial: la veladora que sube tu rango en Fortnite',
+    image: 'assets/memes/Franco930910.webp',
+    fallbackImage: 'Memes Imagenes/Franco930910.webp',
+    downloadName: 'Meme_Franco930910.webp',
+    initialScore: 9.2
+  },
+  {
+    id: 11,
+    author: 'Karem Bal',
+    title: 'Código ARIXU // Drake Meme Edition',
+    subtitle: 'El meme definitivo del código de creadora en la tienda',
+    image: 'assets/memes/Karem Bal.webp',
+    fallbackImage: 'Memes Imagenes/Karem Bal.webp',
+    downloadName: 'Meme_KaremBal.webp',
+    initialScore: 8.3
+  },
+  {
+    id: 12,
+    author: 'Mabelda',
+    title: 'Skin Tryhard de Ari // Godzilla con Alas de Hada',
+    subtitle: 'Godzilla con alas mágicas y zapatillas de conejito rosa',
+    image: 'assets/memes/Mabelda.webp',
+    fallbackImage: 'Memes Imagenes/Mabelda.webp',
+    downloadName: 'Meme_Mabelda.webp',
+    initialScore: 8.5
+  },
+  {
+    id: 13,
+    author: 'Nahuel159',
+    title: 'Ari en Directo vs Bajo el Escritorio // Fitness Secreto',
+    subtitle: 'Sonriendo en stream vs mancuernas pesadas bajo la mesa',
+    image: 'assets/memes/Nahuel159.webp',
+    fallbackImage: 'Memes Imagenes/Nahuel159.webp',
+    downloadName: 'Meme_Nahuel159.webp',
+    initialScore: 8.8
+  },
+  {
+    id: 14,
+    author: 'Piyuyin6',
+    title: '¿Pero y este Men? // El Cachondo Profesional',
+    subtitle: 'Piyuyin y las amantes del chat desatando el caos en directo',
+    image: 'assets/memes/Piyuyin6.webp',
+    fallbackImage: 'Memes Imagenes/Piyuyin6.webp',
+    downloadName: 'Meme_Piyuyin6.webp',
+    initialScore: 9.4
+  },
+  {
+    id: 15,
     author: 'UsuarioX',
-    title: 'Hueco Libre // Slot de la Comunidad #09',
+    title: 'Hueco Libre // Slot de la Comunidad #16',
     subtitle: 'Espacio disponible para un nuevo participante',
     image: 'assets/memes/placeholder_usuariox.svg',
     fallbackImage: 'Memes Imagenes/placeholder_usuariox.svg',
     downloadName: 'Hueco_Libre_UsuarioX.svg',
-    hasVideo: false,
-    contextTitle: 'Expediente Disponible // UsuarioX',
-    contextDesc: 'Este hueco (#09) está actualmente libre y reservado a la espera de un nuevo participante o meme de la comunidad de Arixu.',
     initialScore: 6.0
   }
 ];
@@ -166,14 +207,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const lbZoomIn = document.getElementById('lb-zoom-in');
   const lbZoomOut = document.getElementById('lb-zoom-out');
   const lbZoomReset = document.getElementById('lb-zoom-reset');
-
-  // Context Modal Elements
-  const contextModal = document.getElementById('context-modal');
-  const contextBackdrop = document.getElementById('context-backdrop');
-  const contextCloseBtn = document.getElementById('context-close-btn');
-  const contextModalTitle = document.getElementById('context-modal-title');
-  const contextChipText = document.getElementById('context-chip-text');
-  const contextModalBody = document.getElementById('context-modal-body');
 
   // Player Profile Card Elements
   const userProfileBtn = document.getElementById('user-profile-btn');
@@ -536,7 +569,7 @@ document.addEventListener('DOMContentLoaded', () => {
      2.1 INDIVIDUAL CARD REVEAL LOGIC & ANIMATIONS
      ========================================================================== */
   let revealedCardsCount = 0;
-  const totalCards = 9;
+  const totalCards = MEMES_DATA.length;
   const revealedCountEl = document.getElementById('revealed-count');
   const revealedBarFillEl = document.getElementById('revealed-bar-fill');
   const btnRevealAll = document.getElementById('btn-reveal-all');
@@ -839,155 +872,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ==========================================================================
-     4. CONTEXT MODAL (VÍDEO PLAYER / EXTRA CONTENT)
-     ========================================================================== */
-  function openContextModal(index) {
-    if (!contextModal || !contextModalBody) return;
-    const meme = MEMES_DATA[index];
-    if (!meme) return;
-
-    if (contextModalTitle) {
-      contextModalTitle.textContent = meme.contextTitle;
-    }
-    if (contextChipText) {
-      contextChipText.textContent = meme.hasVideo ? 'VÍDEO CLIP EXTRA // ERREDERAMON' : 'EXPEDIENTE // LORE DE STREAM';
-    }
-
-    if (meme.hasVideo) {
-      contextModalBody.innerHTML = `
-        <div class="context-video-container">
-          <div class="video-hud-header">
-            <div>
-              <span class="hud-rec-dot"></span>
-              <span>● REPRODUCIENDO CONTENIDO EXTRA DE ERREDERAMON</span>
-            </div>
-            <span class="hud-res-badge">VÍDEO HD 1080p</span>
-          </div>
-
-          <div class="video-frame-wrap">
-            <video id="context-video-element" class="context-video" controls playsinline autoplay preload="auto">
-              <source src="${meme.videoSrc}" type="video/mp4">
-              <source src="${meme.videoFallback || 'assets/contexto/Contexto ErredeRamon.mov'}" type="video/quicktime">
-              <source src="Contexto Memes/Contexto ErredeRamon.mp4" type="video/mp4">
-              <source src="Contexto Memes/Contexto ErredeRamon.mov" type="video/quicktime">
-              Tu navegador no soporta el formato de vídeo directo.
-            </video>
-          </div>
-
-          <div class="context-desc-box">
-            <p class="context-description">${meme.contextDesc}</p>
-          </div>
-
-          <div class="context-footer-actions">
-            <a href="${meme.videoSrc}" download="Contexto_ErreDeRamon.mp4" class="context-download-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="16" height="16">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-              </svg>
-              <span>Descargar Vídeo MP4</span>
-            </a>
-            <button type="button" class="context-download-btn secondary" id="ctx-btn-zoom-meme">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="16" height="16">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-              <span>Ver Meme Completo</span>
-            </button>
-          </div>
-        </div>
-      `;
-      const btnZoom = contextModalBody.querySelector('#ctx-btn-zoom-meme');
-      if (btnZoom) {
-        btnZoom.addEventListener('click', () => {
-          closeContextModal();
-          openLightbox(index);
-        });
-      }
-    } else {
-      contextModalBody.innerHTML = `
-        <div class="context-lore-container">
-          <div class="video-hud-header" style="background: rgba(139, 92, 246, 0.12); border-color: rgba(139, 92, 246, 0.35); color: #C084FC;">
-            <span>📄 EXPEDIENTE DE LA COMUNIDAD // ${meme.author.toUpperCase()}</span>
-            <span class="hud-res-badge" style="background: rgba(139, 92, 246, 0.25); border-color: rgba(139, 92, 246, 0.5);">ESPECIAL SUBTEMBER</span>
-          </div>
-
-          <div style="display: flex; gap: 16px; align-items: center; background: rgba(0,0,0,0.45); border-radius: 12px; padding: 14px; border: 1px solid rgba(255,255,255,0.08); margin-top: 10px; cursor: pointer;" id="ctx-preview-card" title="Click para ampliar meme">
-            <div style="position: relative; width: 120px; height: 95px; border-radius: 8px; overflow: hidden; background: #0b0714; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(168, 85, 247, 0.3);">
-              <img src="${meme.image}" alt="${meme.title}" style="max-width: 100%; max-height: 100%; object-fit: contain;">
-            </div>
-            <div style="flex: 1;">
-              <h4 style="font-size: 1.18rem; font-weight: 800; color: #fff; margin-bottom: 4px;">${meme.title}</h4>
-              <span style="font-size: 0.85rem; color: var(--primary-light);">Autor de la creación: <strong style="color:#FFFFFF;">${meme.author}</strong></span>
-              <p style="font-size: 0.78rem; color: #94A3B8; margin-top: 4px;">🔍 Haz clic para ver en pantalla completa</p>
-            </div>
-          </div>
-
-          <div class="context-desc-box" style="margin-top: 14px;">
-            <p class="context-description">${meme.contextDesc}</p>
-          </div>
-
-          <div class="context-footer-actions">
-            <button type="button" class="context-download-btn" id="ctx-lore-btn-zoom">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="16" height="16">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-              <span>Ver Meme en Alta Definición</span>
-            </button>
-            <a href="${meme.image}" download="${meme.downloadName}" class="context-download-btn secondary">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="16" height="16">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-              </svg>
-              <span>Descargar Imagen</span>
-            </a>
-          </div>
-        </div>
-      `;
-
-      const prevCard = contextModalBody.querySelector('#ctx-preview-card');
-      const zoomBtn = contextModalBody.querySelector('#ctx-lore-btn-zoom');
-      const triggerZoom = () => {
-        closeContextModal();
-        openLightbox(index);
-      };
-      if (prevCard) prevCard.addEventListener('click', triggerZoom);
-      if (zoomBtn) zoomBtn.addEventListener('click', triggerZoom);
-    }
-
-    contextModal.classList.add('active');
-    contextModal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-    playHudChirp(true);
-  }
-
-  function closeContextModal() {
-    if (!contextModal) return;
-    const vid = contextModal.querySelector('video');
-    if (vid) {
-      try {
-        vid.pause();
-        vid.currentTime = 0;
-      } catch (e) {}
-    }
-
-    contextModal.classList.remove('active');
-    contextModal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-    playHudChirp(false);
-  }
-
-  if (contextCloseBtn) contextCloseBtn.addEventListener('click', closeContextModal);
-  if (contextBackdrop) contextBackdrop.addEventListener('click', closeContextModal);
-
-  // Hook context buttons on cards
-  document.querySelectorAll('.box-btn.btn-context').forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const idx = parseInt(btn.dataset.index, 10);
-      openContextModal(isNaN(idx) ? 0 : idx);
-    });
-  });
-
   // Keyboard navigation: Escape closes modals, Arrow keys browse lightbox
   window.addEventListener('keydown', (e) => {
     if (lightboxModal && lightboxModal.classList.contains('active')) {
@@ -1002,10 +886,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (e.key === 'Escape') {
-      if (contextModal && contextModal.classList.contains('active')) {
-        closeContextModal();
-        return;
-      }
       if (playerProfileCard && playerProfileCard.classList.contains('active')) {
         closeProfileCard();
         return;
@@ -1295,9 +1175,6 @@ document.addEventListener('DOMContentLoaded', () => {
   } else if (testState === 'lightbox') {
     revealGrid(true, true);
     openLightbox(0);
-  } else if (testState === 'context') {
-    revealGrid(true, true);
-    openContextModal(0);
   } else if (testState === 'profile') {
     openProfileCard();
   }

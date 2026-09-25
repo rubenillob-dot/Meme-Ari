@@ -23,14 +23,13 @@ La plataforma sigue una progresión en tres fases diseñadas para dinamizar el d
     └────────────────────────────────┬───────────────────────────────┘
                                      │ (Transición & Desbloqueo)
     ┌────────────────────────────────▼───────────────────────────────┐
-    │  FASE 2: GALERÍA DE EXPEDIENTES (9 Cajas Selladas)             │
-    │  - Barra de progreso: [ DESCLASIFICADOS: X / 9 ]               │
+    │  FASE 2: GALERÍA DE EXPEDIENTES (16 Cajas Selladas)            │
+    │  - Barra de progreso: [ DESCLASIFICADOS: X / 16 ]              │
     │  - Botón rápido: [ ⚡ Revelar Todos ]                          │
-    │  - 9 Cajas en modo oculto / contenedor clasificado             │
+    │  - 16 Cajas en modo oculto / contenedor clasificado            │
     │  - Clic en caja ──> Animación + Audio FX ──> Meme Desvelado   │
     │  - Sliders de puntuación interactivos (1.0 al 10.0 en 0.1)     │
-    │  - Botones de acción: Zoom Lightbox, Descarga HD y Contexto    │
-    │  - Reproductor de vídeo integrado (Expediente ErreDeRamon)     │
+    │  - Botones de acción: Zoom Lightbox y Descarga HD              │
     │  - Slot libre reservado para la comunidad (Expediente UsuarioX)│
     └────────────────────────────────┬───────────────────────────────┘
                                      │
@@ -40,7 +39,7 @@ La plataforma sigue una progresión en tres fases diseñadas para dinamizar el d
     │  - Ordenación matemática automática según notas de los sliders │
     │  - Modal 3D con Pedestales: 🥇 1º Oro, 🥈 2º Plata, 🥉 3º Bronce │
     │  - Fanfarria triunfal procedural + Lluvia de confeti           │
-    │  - Acordeón con clasificación completa restante (4º al 9º)     │
+    │  - Acordeón con clasificación completa restante (4º al 16º)    │
     └────────────────────────────────────────────────────────────────┘
 ```
 
@@ -72,7 +71,7 @@ La plataforma sigue una progresión en tres fases diseñadas para dinamizar el d
 ---
 
 ### 3. Galería de Memes con Revelación Individual
-- **Modo Oculto Inicial:** Las 9 cajas arrancan como contenedores acorazados sellados (`is-sealed`), con esquinas tecnológicas, barrido de radar, anillo giratorio, candado resplandeciente y el autor del expediente.
+- **Modo Oculto Inicial:** Las 16 cajas arrancan como contenedores acorazados sellados (`is-sealed`), con esquinas tecnológicas, barrido de radar, anillo giratorio, candado resplandeciente y el autor del expediente.
 - **Animación de Desclasificación (Al pulsar en cada caja):**
   1. **Audio FX Procedural:** Acorde armónico ascendente de despresurización sintetizado en tiempo real con la **Web Audio API** (sin latencia ni descargas externas).
   2. **Flash & Resplandor:** Haz de luz radial cian y blanco barriendo la tarjeta (`.card-reveal-flash`).
@@ -80,13 +79,13 @@ La plataforma sigue una progresión en tres fases diseñadas para dinamizar el d
   4. **Desintegración:** La compuerta sellada se desvanece con desenfoque dinámico.
   5. **Pop-in Elástico:** El contenido de la tarjeta entra suavemente con efecto de escala y brillo.
 - **Barra de Progreso:**
-  - Contador interactivo: `🔓 DESCLASIFICADOS: X / 9` con barra animada que avanza en cada revelación.
+  - Contador interactivo: `🔓 DESCLASIFICADOS: X / 16` con barra animada que avanza en cada revelación.
   - Botón opcional **`[ ⚡ Revelar Todos ]`**: Activa una apertura en cascada escalonada de todos los expedientes restantes.
 
 ---
 
 ### 4. Sliders de Puntuación con 1 Decimal
-- Cada una de las 9 cajas cuenta con un slider interactivo (`range`) configurado del **1.0 al 10.0** con pasos de **0.1** (`step="0.1"`).
+- Cada una de las 16 cajas cuenta con un slider interactivo (`range`) configurado del **1.0 al 10.0** con pasos de **0.1** (`step="0.1"`).
 - Muestra la nota numérica en tiempo real con un decimal exacto (ej. `8.5 / 10`, `9.2 / 10`, `10.0 / 10`).
 
 ---
@@ -95,30 +94,36 @@ La plataforma sigue una progresión en tres fases diseñadas para dinamizar el d
 
 | EXP | Autor / Título | Formato | Contenido & Particularidades |
 | :---: | :--- | :---: | :--- |
-| **#01** | **ErreDeRamon** | `WebP` + `MOV` | **Vídeo Clip Extra:** Modal interactivo con reproductor de vídeo HD del momento exacto en Fortnite. |
-| **#02** | **Jaratos** | `WebP` | Meme conmemorativo del lore y anécdotas de chat. |
-| **#03** | **KidMaujMagno** | `WebP` | Creación sobre partidas en squad y giros en Pisos Picados. |
-| **#04** | **LivingBenidorm** | `WebP` | Sustos legendarios y momentos destacados del Subtember. |
-| **#05** | **Neeusgoomisiiis** | `WebP` | Momentos de tensión y clips de stream. |
-| **#06** | **Raquelvete** | `WebP` | Anécdotas y humor característico de la comunidad. |
-| **#07** | **Rubenillo** | `PNG` | Visión técnica de moderación, alertas y producción. |
-| **#08** | **Sito** | `WebP` | La legendaria puntería con escopeta de combate. |
-| **#09** | **UsuarioX** | `SVG` | **Slot Vacante / Hueco Libre:** Gráfico vectorial de reserva para incorporar un nuevo participante. |
+| **#01** | **ErreDeRamon** | `WebP` | Momento de Fortnite: "Top Donadores del Mes". La comunidad es familia. |
+| **#02** | **Jaratos** | `WebP` | Meme conmemorativo del lore y anécdotas de chat: Hater vs 3 Meses de Sub. |
+| **#03** | **KidMaujMagno** | `WebP` | ¡Bienvenido Piyuyin! Cómo Ari ve el stream vs el sótano de baneados. |
+| **#04** | **LivingBenidorm** | `WebP` | Esperando a que ImArixu consiga el rango Unreal en Fortnite. |
+| **#05** | **Neeusgoomisiiis** | `WebP` | Los Mods del Sótano: programando a base de café para el stream. |
+| **#06** | **Raquelvete** | `WebP` | Ponte a estudiar de una vez (#help) vs el directo de Ari. |
+| **#07** | **Sito** | `WebP` | Ari y el Chat tranquilos vs Piyu y su bocina (Undertaker). |
+| **#08** | **Daniela** | `WebP` | Las Veladoras de Santa Ari: fe ciega para la subida a Unreal. |
+| **#09** | **Elenuky8** | `WebP` | Los Stream Snipers vs Arixu: el plan del sniper desbaratado. |
+| **#10** | **Ferdinang** | `WebP` | La Ruleta del Ban: 99% Ban vs 1% Timeout y champán de celebración. |
+| **#11** | **Franco930910** | `WebP` | La Veladora de Santa Ari a la venta en Mercadona para subir de rango. |
+| **#12** | **Karem Bal** | `WebP` | Código ARIXU en la tienda de Fortnite (Formato Drake Meme). |
+| **#13** | **Mabelda** | `WebP` | Skin Tryhard de Ari: Godzilla con alas de hada y zapatillas rosa. |
+| **#14** | **Nahuel159** | `WebP` | Directo sonriente vs fitness secreto con mancuernas bajo la mesa. |
+| **#15** | **Piyuyin6** | `WebP` | ¿Pero y este Men?: El cachondo profesional del chat desatando el caos. |
+| **#16** | **UsuarioX** | `SVG` | **Slot Vacante / Hueco Libre:** Gráfico vectorial de reserva para la comunidad. |
 
 ---
 
 ### 6. Acciones de Tarjeta & Visores
 - **Zoom Lightbox en Pantalla Completa:**
-  - Al hacer clic en la imagen de cualquier meme revelado, se abre un visor modal oscuro.
-  - Controles de zoom (`+`, `-`, `1:1`), arrastre táctil/ratón y atajo de cierre con tecla `Escape`.
+  - Al hacer clic en la imagen de cualquier meme revelado, se abre un visor modal oscuro con navegación de galería (1 / 16).
+  - Controles de zoom (`+`, `-`, `1:1`), flechas de navegación previa/siguiente, arrastre táctil/ratón y atajo de cierre con tecla `Escape`.
 - **Descarga Directa:** Enlace con atributo `download` para obtener el archivo original en resolución nativa.
-- **Modal de Contexto:** Ventana flotante con detalles y anécdotas de cada creación. En el caso de ErreDeRamon, reproduce el archivo de vídeo `assets/contexto/Contexto ErredeRamon.mov`.
 
 ---
 
 ### 7. Podio de Ganadores (Top 3) al Final de la Página
 - **Disparador:** Banner al pie de la cuadrícula con trofeo animado y botón: `[ 👑 MOSTRAR GANADOR TOP 3 ]`.
-- **Cálculo en Vivo:** Ordena automáticamente los 9 memes según las notas decimales fijadas en los sliders.
+- **Cálculo en Vivo:** Ordena automáticamente los 16 memes según las notas decimales fijadas en los sliders.
 - **Pedestales 3D:**
   - **1º Lugar (Oro / Mítico 🥇👑):** Pedestal superior con corona flotante, aureola dorada resplandeciente y título de Campeón.
   - **2º Lugar (Plata 🥈):** Pedestal intermedio con aureola plateada.
@@ -127,7 +132,7 @@ La plataforma sigue una progresión en tres fases diseñadas para dinamizar el d
   - **Fanfarria de Victoria:** Melodía triunfal sintetizada por software con osciladores Web Audio API.
   - **Lluvia de Confeti:** 40 partículas animadas multicolores cayendo por la pantalla.
   - **Interacción:** Clic en cualquier imagen del podio para ampliar en el Lightbox.
-  - **Acordeón Desplegable:** Clasificación completa del 4º al 9º puesto con miniaturas y notas.
+  - **Acordeón Desplegable:** Clasificación completa del 4º al 16º puesto con miniaturas y notas.
   - **Modificar Puntuaciones:** Botón para cerrar y volver a los sliders para ajustar decimales y recalcular.
 
 ---
@@ -141,7 +146,7 @@ La plataforma sigue una progresión en tres fases diseñadas para dinamizar el d
 | **Lógica** | JavaScript (ES6+ Vanilla) | Controlador de estados, eventos táctiles/ratón, cálculo de rankings y gestión de modales. |
 | **Gráficos** | Canvas API 2D & SVG | Fondo con partículas flotantes y gráficos vectoriales adaptables. |
 | **Audio FX** | Web Audio API | Síntesis procedural de despresurización sci-fi y fanfarria triunfal sin ficheros de audio externos. |
-| **Multimedia** | HTML5 Video & Picture | Formatos modernos (`WebP`, `PNG`, `MOV`, `SVG`). |
+| **Multimedia** | Imágenes Web | Formatos modernos (`WebP`, `PNG`, `SVG`). |
 
 ---
 
@@ -153,19 +158,24 @@ Meme-Ari/
 ├── style.css                    # Hoja de estilos completa (tokens, animaciones, podio, cards)
 ├── app.js                       # Controlador JS: estado de bóveda, audio FX, sliders y podio
 ├── assets/
-│   ├── memes/                   # Galería de imágenes de los participantes
-│   │   ├── ErreDeRamon.webp
-│   │   ├── Jaratos.webp
-│   │   ├── KidMaujMagno.webp
-│   │   ├── LivingBenidorm.webp
-│   │   ├── Neeusgoomisiiis.webp
-│   │   ├── Raquelvete.webp
-│   │   ├── Rubenillo.png
-│   │   ├── Sito.webp
-│   │   ├── MemeAri.png
-│   │   └── placeholder_usuariox.svg  # Gráfico vectorial de slot disponible
-│   └── contexto/
-│       └── Contexto ErredeRamon.mov  # Clip de vídeo original de ErreDeRamon
+│   └── memes/                   # Galería de imágenes de los 16 participantes
+│       ├── ErreDeRamon.webp
+│       ├── Jaratos.webp
+│       ├── KidMaujMagno.webp
+│       ├── LivingBenidorm.webp
+│       ├── Neeusgoomisiiis.webp
+│       ├── Raquelvete.webp
+│       ├── Sito.webp
+│       ├── Daniela.webp
+│       ├── Elenuky8.webp
+│       ├── Ferdinang.webp
+│       ├── Franco930910.webp
+│       ├── Karem Bal.webp
+│       ├── Mabelda.webp
+│       ├── Nahuel159.webp
+│       ├── Piyuyin6.webp
+│       └── placeholder_usuariox.svg  # Gráfico vectorial de slot disponible
+├── Memes Imagenes/              # Copia de seguridad de los artes originales
 └── README.md                    # Esta documentación técnica y funcional
 ```
 
@@ -198,7 +208,7 @@ Accede en tu navegador a:
 
 | Tecla / Control | Acción |
 | :--- | :--- |
-| **Escape (`Esc`)** | Cerrar cualquier modal abierto (Lightbox, Perfil de Operador, Contexto, Podio). |
+| **Escape (`Esc`)** | Cerrar cualquier modal abierto (Lightbox, Perfil de Operador, Podio). |
 | **Enter / Espacio** | Desclasificar la caja sellada enfocada con el teclado. |
 | **Clic fuera del modal** | Cierre automático mediante backdrop interactivo. |
 | **Clic en imagen de meme** | Abrir visor Lightbox a pantalla completa con zoom. |
