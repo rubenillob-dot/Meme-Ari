@@ -2093,9 +2093,9 @@ body.no-anim .lightbox-modal.active .lightbox-dialog {
 
 .box-meta-info {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 0 2px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2px 2px;
 }
 
 .box-author-name {
@@ -2109,11 +2109,7 @@ body.no-anim .lightbox-modal.active .lightbox-dialog {
 }
 
 .box-lore-hint {
-  font-size: 0.72rem;
-  color: var(--primary-light);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: none !important;
 }
 
 /* Action buttons */

@@ -11,8 +11,6 @@ const MEMES_DATA = [
   {
     id: 0,
     author: 'ErreDeRamon',
-    title: 'Top Donadores & La Comunidad es Familia',
-    subtitle: 'Clip en directo de Fortnite & Subtember',
     image: 'assets/memes/ErreDeRamon.webp',
     fallbackImage: 'Memes Imagenes/ErreDeRamon.webp',
     downloadName: 'Meme_ErreDeRamon.webp',
@@ -21,8 +19,6 @@ const MEMES_DATA = [
   {
     id: 1,
     author: 'Jaratos',
-    title: 'Hater en el Chat vs 3 Meses de Sub',
-    subtitle: 'Doble personalidad en directo',
     image: 'assets/memes/Jaratos.webp',
     fallbackImage: 'Memes Imagenes/Jaratos.webp',
     downloadName: 'Meme_Jaratos.webp',
@@ -31,8 +27,6 @@ const MEMES_DATA = [
   {
     id: 2,
     author: 'KidMaujMagno',
-    title: '¡Bienvenido Piyuyin! (Cómo Ari ve el stream vs Subs)',
-    subtitle: 'El sótano de los baneados del canal',
     image: 'assets/memes/KidMaujMagno.webp',
     fallbackImage: 'Memes Imagenes/KidMaujMagno.webp',
     downloadName: 'Meme_KidMaujMagno.webp',
@@ -41,8 +35,6 @@ const MEMES_DATA = [
   {
     id: 3,
     author: 'LivingBenidorm',
-    title: 'Esperando a que ImArixu consiga el Unreal',
-    subtitle: 'Tensión máxima en el rango de Fortnite',
     image: 'assets/memes/LivingBenidorm.webp',
     fallbackImage: 'Memes Imagenes/LivingBenidorm.webp',
     downloadName: 'Meme_LivingBenidorm.webp',
@@ -51,8 +43,6 @@ const MEMES_DATA = [
   {
     id: 4,
     author: 'Neeusgoomisiiis',
-    title: 'Los Mods del Sótano',
-    subtitle: 'Programando y sobreviviendo a base de café',
     image: 'assets/memes/Neeusgoomisiiis.webp',
     fallbackImage: 'Memes Imagenes/Neeusgoomisiiis.webp',
     downloadName: 'Meme_Neeusgoomisiiis.webp',
@@ -61,8 +51,6 @@ const MEMES_DATA = [
   {
     id: 5,
     author: 'Raquelvete',
-    title: 'Ponte a estudiar de una vez (#help)',
-    subtitle: 'Prioridades claras con el directo de Ari',
     image: 'assets/memes/Raquelvete.webp',
     fallbackImage: 'Memes Imagenes/Raquelvete.webp',
     downloadName: 'Meme_Raquelvete.webp',
@@ -71,8 +59,6 @@ const MEMES_DATA = [
   {
     id: 6,
     author: 'Sito',
-    title: 'Ari y el Chat Tranquilos vs Piyu y su Bocina',
-    subtitle: 'Susto legendario en directo (Undertaker)',
     image: 'assets/memes/Sito.webp',
     fallbackImage: 'Memes Imagenes/Sito.webp',
     downloadName: 'Meme_Sito.webp',
@@ -81,8 +67,6 @@ const MEMES_DATA = [
   {
     id: 7,
     author: 'Daniela',
-    title: 'Las Veladoras de Santa Ari // Subida a Unreal',
-    subtitle: 'Fe ciega en el Unreal con veladoras milagrosas',
     image: 'assets/memes/Daniela.webp',
     fallbackImage: 'Memes Imagenes/Daniela.webp',
     downloadName: 'Meme_Daniela.webp',
@@ -91,8 +75,6 @@ const MEMES_DATA = [
   {
     id: 8,
     author: 'Elenuky8',
-    title: 'Los Stream Snipers vs Ari xu // El Plan del SS',
-    subtitle: 'El infalible plan de los snipers... hasta que Ari dispara',
     image: 'assets/memes/Elenuky8.webp',
     fallbackImage: 'Memes Imagenes/Elenuky8.webp',
     downloadName: 'Meme_Elenuky8.webp',
@@ -101,8 +83,6 @@ const MEMES_DATA = [
   {
     id: 9,
     author: 'Ferdinang',
-    title: 'La Ruleta del Ban // 99% Ban vs 1% Timeout',
-    subtitle: 'Ruleta de sanciones y Art el Payaso descorchando champán',
     image: 'assets/memes/Ferdinang.webp',
     fallbackImage: 'Memes Imagenes/Ferdinang.webp',
     downloadName: 'Meme_Ferdinang.webp',
@@ -111,8 +91,6 @@ const MEMES_DATA = [
   {
     id: 10,
     author: 'Franco930910',
-    title: 'La Veladora de Santa Ari // Patrona en Mercadona',
-    subtitle: 'Anuncio oficial: la veladora que sube tu rango en Fortnite',
     image: 'assets/memes/Franco930910.webp',
     fallbackImage: 'Memes Imagenes/Franco930910.webp',
     downloadName: 'Meme_Franco930910.webp',
@@ -121,8 +99,6 @@ const MEMES_DATA = [
   {
     id: 11,
     author: 'Karem Bal',
-    title: 'Código ARIXU // Drake Meme Edition',
-    subtitle: 'El meme definitivo del código de creadora en la tienda',
     image: 'assets/memes/Karem Bal.webp',
     fallbackImage: 'Memes Imagenes/Karem Bal.webp',
     downloadName: 'Meme_KaremBal.webp',
@@ -131,8 +107,6 @@ const MEMES_DATA = [
   {
     id: 12,
     author: 'Mabelda',
-    title: 'Skin Tryhard de Ari // Godzilla con Alas de Hada',
-    subtitle: 'Godzilla con alas mágicas y zapatillas de conejito rosa',
     image: 'assets/memes/Mabelda.webp',
     fallbackImage: 'Memes Imagenes/Mabelda.webp',
     downloadName: 'Meme_Mabelda.webp',
@@ -141,8 +115,6 @@ const MEMES_DATA = [
   {
     id: 13,
     author: 'Nahuel159',
-    title: 'Ari en Directo vs Bajo el Escritorio // Fitness Secreto',
-    subtitle: 'Sonriendo en stream vs mancuernas pesadas bajo la mesa',
     image: 'assets/memes/Nahuel159.webp',
     fallbackImage: 'Memes Imagenes/Nahuel159.webp',
     downloadName: 'Meme_Nahuel159.webp',
@@ -151,8 +123,6 @@ const MEMES_DATA = [
   {
     id: 14,
     author: 'Piyuyin6',
-    title: '¿Pero y este Men? // El Cachondo Profesional',
-    subtitle: 'Piyuyin y las amantes del chat desatando el caos en directo',
     image: 'assets/memes/Piyuyin6.webp',
     fallbackImage: 'Memes Imagenes/Piyuyin6.webp',
     downloadName: 'Meme_Piyuyin6.webp',
@@ -754,7 +724,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (lightboxImg) {
       lightboxImg.src = meme.image;
-      lightboxImg.alt = meme.title;
+      lightboxImg.alt = `Meme de ${meme.author}`;
       // Handle fallback on error
       lightboxImg.onerror = () => {
         if (meme.fallbackImage && lightboxImg.src !== meme.fallbackImage) {
@@ -762,8 +732,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       };
     }
-    if (lbTitle) lbTitle.textContent = meme.title;
-    if (lbSubtitle) lbSubtitle.textContent = meme.subtitle ? `${meme.subtitle} • Autor: ${meme.author}` : `Autor: ${meme.author}`;
+    if (lbTitle) lbTitle.textContent = meme.author;
+    if (lbSubtitle) lbSubtitle.textContent = '';
     if (lbDownload) {
       lbDownload.href = meme.image;
       lbDownload.download = meme.downloadName;
@@ -772,7 +742,7 @@ document.addEventListener('DOMContentLoaded', () => {
       lbCounter.textContent = `${index + 1} / ${MEMES_DATA.length}`;
     }
     if (lbAuthor) {
-      lbAuthor.textContent = meme.author;
+      lbAuthor.textContent = 'AUTOR';
     }
     if (lbAmbientBg) {
       lbAmbientBg.style.backgroundImage = `url("${meme.image}")`;
@@ -1268,7 +1238,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="podium-card">
           <div class="podium-place-badge">🥈 2º Puesto</div>
           <div class="podium-img-wrap" data-meme-idx="${second.index}" title="Click para ampliar imagen">
-            <img src="${second.image}" alt="${second.title}" class="podium-meme-img">
+            <img src="${second.image}" alt="Meme de ${second.author}" class="podium-meme-img">
           </div>
           <div class="podium-author-name">${second.author}</div>
           <div class="podium-score-pill">
@@ -1288,7 +1258,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="podium-card-crown">👑</div>
           <div class="podium-place-badge">🥇 1º GANADOR</div>
           <div class="podium-img-wrap" data-meme-idx="${first.index}" title="Click para ampliar meme campeón">
-            <img src="${first.image}" alt="${first.title}" class="podium-meme-img">
+            <img src="${first.image}" alt="Meme de ${first.author}" class="podium-meme-img">
           </div>
           <div class="podium-author-name">${first.author}</div>
           <div class="podium-score-pill">
@@ -1307,7 +1277,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="podium-card">
           <div class="podium-place-badge">🥉 3º Puesto</div>
           <div class="podium-img-wrap" data-meme-idx="${third.index}" title="Click para ampliar imagen">
-            <img src="${third.image}" alt="${third.title}" class="podium-meme-img">
+            <img src="${third.image}" alt="Meme de ${third.author}" class="podium-meme-img">
           </div>
           <div class="podium-author-name">${third.author}</div>
           <div class="podium-score-pill">
@@ -1338,7 +1308,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="ranking-row-item">
           <div class="ranking-row-left">
             <span class="ranking-pos-chip">${idx + 4}º</span>
-            <img src="${item.image}" alt="${item.title}" class="ranking-thumb">
+            <img src="${item.image}" alt="Meme de ${item.author}" class="ranking-thumb">
             <span class="ranking-row-name">${item.author}</span>
           </div>
           <span class="ranking-row-score">${item.score.toFixed(1)} pts</span>
