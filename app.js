@@ -157,16 +157,6 @@ const MEMES_DATA = [
     fallbackImage: 'Memes Imagenes/Piyuyin6.webp',
     downloadName: 'Meme_Piyuyin6.webp',
     initialScore: 9.4
-  },
-  {
-    id: 15,
-    author: 'UsuarioX',
-    title: 'Hueco Libre // Slot de la Comunidad #16',
-    subtitle: 'Espacio disponible para un nuevo participante',
-    image: 'assets/memes/placeholder_usuariox.svg',
-    fallbackImage: 'Memes Imagenes/placeholder_usuariox.svg',
-    downloadName: 'Hueco_Libre_UsuarioX.svg',
-    initialScore: 6.0
   }
 ];
 

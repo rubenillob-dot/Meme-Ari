@@ -23,14 +23,13 @@ La plataforma sigue una progresión en tres fases diseñadas para dinamizar el d
     └────────────────────────────────┬───────────────────────────────┘
                                      │ (Transición & Desbloqueo)
     ┌────────────────────────────────▼───────────────────────────────┐
-    │  FASE 2: GALERÍA DE EXPEDIENTES (16 Cajas Selladas)            │
-    │  - Barra de progreso: [ DESCLASIFICADOS: X / 16 ]              │
+    │  FASE 2: GALERÍA DE EXPEDIENTES (15 Cajas Selladas)            │
+    │  - Barra de progreso: [ DESCLASIFICADOS: X / 15 ]              │
     │  - Botón rápido: [ ⚡ Revelar Todos ]                          │
-    │  - 16 Cajas en modo oculto / contenedor clasificado            │
+    │  - 15 Cajas en modo oculto / contenedor clasificado            │
     │  - Clic en caja ──> Animación + Audio FX ──> Meme Desvelado   │
     │  - Sliders de puntuación interactivos (1.0 al 10.0 en 0.1)     │
     │  - Botones de acción: Zoom Lightbox y Descarga HD              │
-    │  - Slot libre reservado para la comunidad (Expediente UsuarioX)│
     └────────────────────────────────┬───────────────────────────────┘
                                      │
     ┌────────────────────────────────▼───────────────────────────────┐
@@ -39,7 +38,7 @@ La plataforma sigue una progresión en tres fases diseñadas para dinamizar el d
     │  - Ordenación matemática automática según notas de los sliders │
     │  - Modal 3D con Pedestales: 🥇 1º Oro, 🥈 2º Plata, 🥉 3º Bronce │
     │  - Fanfarria triunfal procedural + Lluvia de confeti           │
-    │  - Acordeón con clasificación completa restante (4º al 16º)    │
+    │  - Acordeón con clasificación completa restante (4º al 15º)    │
     └────────────────────────────────────────────────────────────────┘
 ```
 
@@ -71,7 +70,7 @@ La plataforma sigue una progresión en tres fases diseñadas para dinamizar el d
 ---
 
 ### 3. Galería de Memes con Revelación Individual
-- **Modo Oculto Inicial:** Las 16 cajas arrancan como contenedores acorazados sellados (`is-sealed`), con esquinas tecnológicas, barrido de radar, anillo giratorio, candado resplandeciente y el autor del expediente.
+- **Modo Oculto Inicial:** Las 15 cajas arrancan como contenedores acorazados sellados (`is-sealed`), con esquinas tecnológicas, barrido de radar, anillo giratorio, candado resplandeciente y el autor del expediente.
 - **Animación de Desclasificación (Al pulsar en cada caja):**
   1. **Audio FX Procedural:** Acorde armónico ascendente de despresurización sintetizado en tiempo real con la **Web Audio API** (sin latencia ni descargas externas).
   2. **Flash & Resplandor:** Haz de luz radial cian y blanco barriendo la tarjeta (`.card-reveal-flash`).
@@ -79,13 +78,13 @@ La plataforma sigue una progresión en tres fases diseñadas para dinamizar el d
   4. **Desintegración:** La compuerta sellada se desvanece con desenfoque dinámico.
   5. **Pop-in Elástico:** El contenido de la tarjeta entra suavemente con efecto de escala y brillo.
 - **Barra de Progreso:**
-  - Contador interactivo: `🔓 DESCLASIFICADOS: X / 16` con barra animada que avanza en cada revelación.
+  - Contador interactivo: `🔓 DESCLASIFICADOS: X / 15` con barra animada que avanza en cada revelación.
   - Botón opcional **`[ ⚡ Revelar Todos ]`**: Activa una apertura en cascada escalonada de todos los expedientes restantes.
 
 ---
 
 ### 4. Sliders de Puntuación con 1 Decimal
-- Cada una de las 16 cajas cuenta con un slider interactivo (`range`) configurado del **1.0 al 10.0** con pasos de **0.1** (`step="0.1"`).
+- Cada una de las 15 cajas cuenta con un slider interactivo (`range`) configurado del **1.0 al 10.0** con pasos de **0.1** (`step="0.1"`).
 - Muestra la nota numérica en tiempo real con un decimal exacto (ej. `8.5 / 10`, `9.2 / 10`, `10.0 / 10`).
 
 ---
@@ -109,13 +108,12 @@ La plataforma sigue una progresión en tres fases diseñadas para dinamizar el d
 | **#13** | **Mabelda** | `WebP` | Skin Tryhard de Ari: Godzilla con alas de hada y zapatillas rosa. |
 | **#14** | **Nahuel159** | `WebP` | Directo sonriente vs fitness secreto con mancuernas bajo la mesa. |
 | **#15** | **Piyuyin6** | `WebP` | ¿Pero y este Men?: El cachondo profesional del chat desatando el caos. |
-| **#16** | **UsuarioX** | `SVG` | **Slot Vacante / Hueco Libre:** Gráfico vectorial de reserva para la comunidad. |
 
 ---
 
 ### 6. Acciones de Tarjeta & Visores
 - **Zoom Lightbox en Pantalla Completa:**
-  - Al hacer clic en la imagen de cualquier meme revelado, se abre un visor modal oscuro con navegación de galería (1 / 16).
+  - Al hacer clic en la imagen de cualquier meme revelado, se abre un visor modal oscuro con navegación de galería (1 / 15).
   - Controles de zoom (`+`, `-`, `1:1`), flechas de navegación previa/siguiente, arrastre táctil/ratón y atajo de cierre con tecla `Escape`.
 - **Descarga Directa:** Enlace con atributo `download` para obtener el archivo original en resolución nativa.
 
@@ -123,7 +121,7 @@ La plataforma sigue una progresión en tres fases diseñadas para dinamizar el d
 
 ### 7. Podio de Ganadores (Top 3) al Final de la Página
 - **Disparador:** Banner al pie de la cuadrícula con trofeo animado y botón: `[ 👑 MOSTRAR GANADOR TOP 3 ]`.
-- **Cálculo en Vivo:** Ordena automáticamente los 16 memes según las notas decimales fijadas en los sliders.
+- **Cálculo en Vivo:** Ordena automáticamente los 15 memes según las notas decimales fijadas en los sliders.
 - **Pedestales 3D:**
   - **1º Lugar (Oro / Mítico 🥇👑):** Pedestal superior con corona flotante, aureola dorada resplandeciente y título de Campeón.
   - **2º Lugar (Plata 🥈):** Pedestal intermedio con aureola plateada.
@@ -132,7 +130,7 @@ La plataforma sigue una progresión en tres fases diseñadas para dinamizar el d
   - **Fanfarria de Victoria:** Melodía triunfal sintetizada por software con osciladores Web Audio API.
   - **Lluvia de Confeti:** 40 partículas animadas multicolores cayendo por la pantalla.
   - **Interacción:** Clic en cualquier imagen del podio para ampliar en el Lightbox.
-  - **Acordeón Desplegable:** Clasificación completa del 4º al 16º puesto con miniaturas y notas.
+  - **Acordeón Desplegable:** Clasificación completa del 4º al 15º puesto con miniaturas y notas.
   - **Modificar Puntuaciones:** Botón para cerrar y volver a los sliders para ajustar decimales y recalcular.
 
 ---
@@ -158,7 +156,7 @@ Meme-Ari/
 ├── style.css                    # Hoja de estilos completa (tokens, animaciones, podio, cards)
 ├── app.js                       # Controlador JS: estado de bóveda, audio FX, sliders y podio
 ├── assets/
-│   └── memes/                   # Galería de imágenes de los 16 participantes
+│   └── memes/                   # Galería de imágenes de los 15 participantes
 │       ├── ErreDeRamon.webp
 │       ├── Jaratos.webp
 │       ├── KidMaujMagno.webp
@@ -173,8 +171,7 @@ Meme-Ari/
 │       ├── Karem Bal.webp
 │       ├── Mabelda.webp
 │       ├── Nahuel159.webp
-│       ├── Piyuyin6.webp
-│       └── placeholder_usuariox.svg  # Gráfico vectorial de slot disponible
+│       └── Piyuyin6.webp
 ├── Memes Imagenes/              # Copia de seguridad de los artes originales
 └── README.md                    # Esta documentación técnica y funcional
 ```
